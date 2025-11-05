@@ -13,3 +13,7 @@ def contato():
 @app.route('/pages/sobrenos')
 def sobrenos():
     return render_template('pages/sobrenos.html')
+
+@app.route('/pages/content')
+def content():
+    return render_template('pages/content.html')
