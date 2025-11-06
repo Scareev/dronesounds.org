@@ -2,55 +2,20 @@
 {% block main %}
 
 
-<main>
-  <article>
-    <h2>Bem vindo, futuro compositor.</h2>
-    <p> Este site é sobre teoria musical e seus fundamentos harmônicos. Além disso uma compreensão
-      ampla sobre estruturas complexas.
-    </p>
-    <p> Há diversas maneiras de você se expressar musicalmente, porém você vai ter mais liberdade composicional
-      se aprender alguns fundamentos de forma simplificada, dinâmica e direta!
-    </p>
-  </article>
+<main class="border border-5 rounded rounded-5 bg-secondary">
+  <div class="container-xl">
+    <h2 class="p-2">Bem vindo, futuro compositor.</h2>
+    <p class="p-2"> Este site é sobre teoria musical e seus fundamentos harmônicos. Além disso uma compreensão
+      ampla sobre estruturas complexas. </p>
+        <p class="p-2"> Há diversas maneiras de você se expressar musicalmente, porém você vai ter mais liberdade composicional
+      se aprender alguns fundamentos de forma simplificada, dinâmica e direta!     </p>
+        </div>
 
-  <div class="start">
+  <div class="container-xl bg-primary">
     <h1>Início</h1>
-    <p> Quer começar a aprender agora?
-    </p>
-    <button class="palpatine"><a class="palpatine" href="{{url_for('content')}}">Começe aqui</a></button>
+    <p class="p-2"> Quer começar a aprender agora?  </p>
+    <button class="p-5 mb-3 btn btn-info"><a href="{{url_for('content')}}">Começe aqui</a></button>
   </div>
 </main>
-
-<h1>Álbuns recentes</h1>
-
-<marquee style="font-family: lato; color: #FFFFFF" bgcolor="#521147" scrolldelay="70">Entre em contato para colocar sua
-  música!</marquee>
-
-<section class="container music d-flex justify-content-center pb-5">
-  <div class="row">
-    <div class="col">
-      <a href="https://www.youtube.com/watch?v=n9D5YSVckdw" title="CHRONORUPTURA" target="blank"> <img
-          src="https://scareev.neocities.org/Chronoruptura.png" class="imgsize"> </a>
-      <p font-size="20px;">"CHRONORUPTURA"</p>
-      <h5>By: Scareev</h5>
-      <h6 style="color: rgb(0, 255, 98);">Status: Released</h6>
-    </div>
-    <div class="col">
-      <a href="https://www.youtube.com/watch?v=26dqatiKAy0&t=248s" title="CHAOS UNIVERSE VOLUME I" target="blank"> <img
-          src="https://scareev.neocities.org/CHAOS.png" class="imgsize"> </a>
-      <p font-size="20px;">"CHAOS UNIVERSE VOL I"</p>
-      <h5>By: Scareev</h5>
-      <h6 style="color: rgb(0, 255, 98);">Status: Released</h6>
-    </div>
-    <div class="col">
-      <a href="https://www.youtube.com/watch?v=MoSjSvdJQH0&t=547s" title="CHAOS UNIVERSE VOLUME II" target="blank"> <img
-          src="https://scareev.neocities.org/CHAOSz2.png" class="imgsize"> </a>
-      <p font-size="20px;">"CHAOS UNIVERSE VOL II"</p>
-      <h5>By: Scareev</h5>
-      <h6 style="color: rgb(0, 255, 98);">Status: Released</h6>
-    </div>
-  </div>
-</section>
-
 
 {% endblock %}
