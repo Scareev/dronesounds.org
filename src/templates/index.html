@@ -2,20 +2,30 @@
 {% block main %}
 
 
-<main class="border border-5 rounded rounded-5 bg-secondary">
-  <div class="container-xl">
-    <h2 class="p-2">Bem vindo, futuro compositor.</h2>
-    <p class="p-2"> Este site é sobre teoria musical e seus fundamentos harmônicos. Além disso uma compreensão
-      ampla sobre estruturas complexas. </p>
-        <p class="p-2"> Há diversas maneiras de você se expressar musicalmente, porém você vai ter mais liberdade composicional
-      se aprender alguns fundamentos de forma simplificada, dinâmica e direta!     </p>
-        </div>
+  <main class="border border border-dark-subtle rounded rounded-5 mx-5 contentbg">
+    <div class="p-5">
+      <h2>Bem vindo, futuro compositor. 🎸</h2>
+      <p> Este site é sobre teoria musical e seus fundamentos harmônicos. Além disso uma compreensão
+        ampla sobre estruturas complexas. </p>
+          <p> Há diversas maneiras de você se expressar musicalmente, porém você vai ter mais liberdade composicional
+        se aprender alguns fundamentos de forma simplificada, dinâmica e direta! </p>
+          </div>
 
-  <div class="container-xl bg-primary">
-    <h1>Início</h1>
-    <p class="p-2"> Quer começar a aprender agora?  </p>
-    <button class="p-5 mb-3 btn btn-info"><a href="{{url_for('content')}}">Começe aqui</a></button>
-  </div>
-</main>
+    <div style="grid-template-columns: auto 2fr;" class="mx-5 d-grid gap-0">
+      <div class="row">
+        <div class="col contentbg m-1 p-3">
+        <h3 class="border-bottom">PRIMEIROS MÓDULOS</h3>
+        <p>Aqui, você ira ter seu primeiro contato com nosso aprendizado! Entre aqui para estudar os conceitos básicos da música em geral!</p>
+        <a href="{{url_for('content')}}"><button class="p-5 mb-3 btn btn-info bg-dark text-white">Começe aqui</button></a>
+        </div>
+        <div class="col contentbg m-1 p-3">
+        <h3 class="border-bottom">TÍTULO</h3>
+        <p>CONTEÚDO 2</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
 
 {% endblock %}

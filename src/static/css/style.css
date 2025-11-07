@@ -1,17 +1,33 @@
-:root {
-  /* isso não faz coisa nenhuma */
-  --bs-primary: #3b1b2b;
-  --bs-secondary: #a34e72;
-  --bs-success: #be4d99;
-  --bs-danger: #dc3545;
-  --bs-light: #f8f9fa;
-  --bs-dark: #212529;
-
-  /* aqui que tá o caldo */
-  --bs-primary-rgb: 59, 90, 43;
-  --bs-secondary-rgb: 70, 126, 20; 
+a{
+  color:rgb(187, 105, 173)
 }
 
-p, h1, h2, h3, h4, h5, h6{
-  color: white;
+a:hover{
+  color:rgb(230, 196, 224);
+  background-color: rgba(127, 255, 212, 0.103);
+}
+
+body{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* BACKGROUND ESTELAR*/
+
+.starrynight{
+  background-image: url('https://sadhost.neocities.org/images/tiles/stars3.gif');
+}
+
+/* CORES DE FUNDO PARA CONTEÚDO*/
+.contentbg{
+  background: linear-gradient(#3f343a, #2c272a, #181517);
+}
+
+.contentbg2{
+  background: linear-gradient(#3f343a, #c45597, #181517);
+}
+
+/* GRADIENTE LATERAL*/
+
+.lateralgrad{
+  background: linear-gradient(to right, #2c272a, #18151700, #18151700);
 }
