@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block main %}
+
+    <div class="p-4">
+    <h1>Como chegou aqui?</h1>
+    <p>Interessante... Sua curiosidade te trousse até aqui, mas você sabe a senha para entrar aqui?</p>
+        <form id="secretForm">
+            <input type="password" id="senha" name="senha" placeholder="Sua senha">
+            <input type="submit" value="Entrar">
+        </form>
+
+    <script>
+    (function(){
+        const form = document.getElementById('secretForm');
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+            const senha = (document.getElementById('senha').value || '').trim();
+            if(senha === 'bete'){
+                window.location.href = '/page1';
+            } else if(senha === 'caio'){
+                window.location.href = '/page2';
+            } else if(senha === 'miguel'){
+                window.location.href = '/page3';
+            } else if(senha === 'julio'){
+                window.location.href = '/page4';
+            } else if(senha === 'tiago'){
+                window.location.href = '/page5';
+            } else {
+                alert('ERROU!!!');
+            }
+        });
+    })();
+    </script>
+    </div>
+
+
+
+{% endblock %}

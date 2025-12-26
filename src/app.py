@@ -17,3 +17,17 @@ def sobrenos():
 @app.route('/pages/content')
 def content():
     return render_template('pages/content.html')
+
+@app.route('/pages/newyear')
+def newyear():
+    return render_template('pages/newyear.html')
+
+
+@app.route('/page1')
+def page1():
+    return render_template('pages/page1.html')
+
+
+@app.route('/page2')
+def page2():
+    return render_template('pages/page2.html')
