@@ -1,10 +1,26 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
+SENHAS_PAGINAS = {
+    'dsagshdg': 'pages/page1.html',
+    'wptmrqr': 'pages/page2.html',
+    'sgtppr': 'pages/page3.html',
+    'hgjdpm': 'pages/page4.html',
+    'piggapigga': 'pages/page5.html',
+    'NEGAO': 'pages/page6.html'
+}
 
 @app.route('/')
 def home():
     return render_template('index.html')
+
+@app.route('/acesso', methods=['POST'])
+def acesso():
+    senha_digitada = request.form.get('senha', '').strip().lower()
+    if senha_digitada in SENHAS_PAGINAS:
+        return render_template(SENHAS_PAGINAS[senha_digitada])
+    else:
+        return render_template('pages/newyear.html')
 
 @app.route('/pages/contato')
 def contato():
@@ -22,22 +38,5 @@ def content():
 def newyear():
     return render_template('pages/newyear.html')
 
-@app.route('/page1')
-def page1():
-    return render_template('pages/page1.html')
-
-@app.route('/page2')
-def page2():
-    return render_template('pages/page2.html')
-
-@app.route('/page3')
-def page3():
-    return render_template('pages/page3.html')
-
-@app.route('/page4')
-def page4():
-    return render_template('pages/page4.html')
-
-@app.route('/page5')
-def page5():
-    return render_template('pages/page5.html')
+if __name__ == '__main__':
+    app.run(debug=True)
