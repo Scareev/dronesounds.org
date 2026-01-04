@@ -7,7 +7,7 @@ SENHAS_PAGINAS = {
     'sgtppr': 'pages/page3.html',
     'hgjdpm': 'pages/page4.html',
     'piggapigga': 'pages/page5.html',
-    'NEGAO': 'pages/page6.html'
+    'negao': 'pages/page6.html'
 }
 
 @app.route('/')
